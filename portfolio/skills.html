@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HTML</title>
+    <meta name="description" content="web-portfolio">
+    <meta name="author" content="Nikola Karagyozov">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            $("h1").click(function(){
+                $(this).toggleClass("active");
+                $(this).siblings("ul").toggleClass("hidden");
+            });
+            
+            $("li").click(function(event){
+                event.stopPropagation();
+                $(this).children("ul").toggleClass("hidden");
+            });
+        });
+
+     
+    </script>
+</head>
+<body class="skillsbody">
+    <header>
+        <div class="navmenu">
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="edu.html">Education</a></li>
+                <li><a href="interes.html">Interests</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <div class="skillslist">
+        <div class="skillsblock">
+            <h1>Frond-end</h1>
+            <ul class="hidden">
+                <li>HTML
+                    <ul class="hidden">
+                      <p>more abaut my skill</p>
+                    </ul>
+                </li>
+                <li>CSS
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+                <li>JavaScrypt
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+                <li>TypeScrypt
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+            </ul>
+            <img src="assets/logo/felogo.svg" alt="logo" class="logo">
+        </div>
+        <br>
+        <div class="skillsblock">
+            <h1>Back-end</h1>
+            <ul class="hidden">
+                <li>Java
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+                <li>Python
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+                <li>Note.js
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+                <li>PHP
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+            </ul>
+            <img src="assets/logo/bglogo.svg" alt="logo" class="logo">
+        </div>
+        <br>
+        <div class="skillsblock">
+            <h1>Infrastructure</h1>
+            <ul class="hidden">
+                <li>Operating system
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+                <li>Docker
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+                <li>Sys admin
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+                <li>Cyber security
+                    <ul class="hidden">
+                        <p>more abaut my skill</p>
+                      </ul>
+                </li>
+            </ul>
+            <img src="assets/logo/inflogo.svg" alt="logo" class="logo">
+        </div>
+    </div>
+    <script>
+        document.querySelector('.skillsblock').style.maxHeight = 'none !important';
+    </script>
+
+</body>
+</html>

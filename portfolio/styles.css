@@ -1,0 +1,198 @@
+/*nav bar*/
+
+header {
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.navmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.navbar {
+  text-align: center;
+  background-color: white;
+  opacity: 40%;
+  width: 100%;
+  height: 20px;
+  border-radius: 3px;
+}
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 3px;
+}
+
+.navbar ul li a:hover {
+  background-color: #000;
+  color: white;
+  opacity: 20%;
+}
+.navbar {
+  text-align: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/*background*/
+
+.homebody {
+  background-image: url("assets/background/about_page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+  
+}
+  .skillsbody{
+  background-image: url("assets/background/skills_page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+.edubody {
+  background-image: url("assets/background/edu-page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+.interesbody {
+  background-image: url("assets/background/Interests_page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+.contactbody {
+  background-image: url("assets/background/contact_page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+/*Home page*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: end;
+  height: 100vh;
+}
+.block {
+  width: 48vw;
+  height: 170px;
+  background-color: #ccc;
+  border-radius: 10px;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.block:hover {
+  height: 500px; /* Променете тази стойност според вашите нужди */
+}
+
+.block-content {
+  padding: 10px;
+}
+
+.block-content h2,
+.block-content p {
+  margin: 0;
+}
+
+
+/*Skills page*/
+
+.info-box {
+background-color: #f6f6f6;
+padding: 10px;
+margin-top: 5px;
+font-size: 14px;
+}
+ul {
+list-style-type: none;
+}
+.skillslist {
+display: flex;
+flex-direction: row;
+}
+
+.skillsblock {
+width: 30vw;
+height: 40vw;
+max-height: none;
+overflow: auto;
+background-color: #ccc;
+opacity: 0.4;
+border-radius: 10px;
+color: black;
+margin-right: 10px;
+text-align: center;
+}
+.skillsblock.expanded {
+height: auto;
+}
+.skillsblock:last-child {
+margin-right: 0;
+}
+.logo {
+
+}
+.hidden {
+  z-index: 1;
+}
+
+
+
+/*Education page*/
+/*Interests page*/  
+/*Contact page*/
+/*Other element*/
+
+
